@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    font-family: 'inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-nav .nav-link {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar-nav .nav-link {
+    margin-right: 10px;
+}
+
+.navbar-brand p {
+    margin-left: 10px;
+}
+
+
+
+.articlecamisas{
+    max-width: 300px;
+    background-color: #ffffff;
+    padding: 32px 24px 24px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0, 0.5);
+    cursor: pointer;
+    transition: box-shadow .3s;
+}
+
+.articlecamisas img{
+    width: 100%;
+    margin-bottom: 16px;
+    transition: transform .3s;
+}
+
+.articlecamisas h1{
+   font-size: 18px;
+   margin-bottom: 8px;
+}
+
+.articlecamisas p{
+    font-size: 32px;
+}
+
+.articlecamisas span{
+    font-size: 16px;
+    display: block;
+    margin-bottom: 24px;
+}
+
+.articlecamisas button{
+   width: 100%;
+   border: none;
+   padding: 10px;
+   border-radius: 5px;
+   background-color:blue;
+   color: #ffffff;
+   font-size: 18px;
+   font-weight: bold;
+   transition: background-color 1s;
+}
+
+.articlecamisas:hover img{
+    transform: scale(1.1);
+}
+
+.articlecamisas:hover button{
+    background-color: black;
+}
+
+.articlecamisas:hover{
+    box-shadow: 5px 5px 25px rgba(0,0,0, 0.5);
+}
+
+
+.container{
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.col-md-4{
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+
+footer{
+    width: 100%;
+    color: white;
+}
+
+.footer-link{
+    text-decoration: none;
+}
+
+#footer_content{
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer_contacts h1{
+  margin-bottom: 0.75rem;  
+}
+
+#footer_social_media{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer_social_media .footer-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: white;
+    border-radius: 50%;
+}
+
+#footer_social_media .footer-link i{
+    font-size: 1.25rem;
+}
+
+#instagram{
+   background: white;
+}
+
+#facebook{
+    background: white; 
+}
+
+#youtube{
+    background: white; 
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer-list .footer-link{
+   color: #00ADEE; 
+}
+
+#footer-subscribe{
+   display: flex;
+   flex-direction: column;
+   gap: 1.5rem;
+}
+
+#footer_subscribe p{
+    color: #00ADEE;  
+}
+
+@media screen and (max-width: 768px){
+    #footer_content{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 426px){
+    #footer_content{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+}

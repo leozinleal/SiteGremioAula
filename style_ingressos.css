@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    font-family: 'inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar-nav .nav-link {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar-nav .nav-link {
+    margin-right: 10px;
+}
+
+.navbar-brand p {
+    margin-left: 10px;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.card{
+    background: white;
+    box-shadow: 0px 2px 18px #00ADEE;
+    border-radius: 20px;
+    width: 400px;
+    cursor: pointer;
+    transition: box-shadow .3s;
+}
+
+.title{
+    text-align: center;
+}
+
+.secondtext{
+    text-align: center; 
+}
+
+.topcard{
+    padding: 0px;
+    padding-top: 10px;
+}
+
+.bottomcard{
+    padding: 20px;
+    padding-bottom: 0px;  
+}
+
+.bottomtext{
+    text-align: center;
+}
+
+.mediacard{
+    background: url("https://arenapoa.com.br/wp-content/uploads/2023/08/ARENA_GRE%CC%82MIO_x_FLUMINENSE_CAPAS_2_Site_570x428-1024x777.jpg") center/cover;
+    height: 200px;
+    width: 100%;
+}
+
+.mediacard2{
+    background: url("https://arenapoa.com.br/wp-content/uploads/2023/05/ARENA_GRE%CC%82MIO_X_INTERNACIONAL_2_Site_570x428.jpg") center/cover;
+    height: 200px;
+    width: 100%;
+}
+
+.mediacard3{
+    background: url("https://arenapoa.com.br/wp-content/uploads/2023/05/ARENA_GRE%CC%82MIO_X_SA%CC%83O-PAULO_2_Site_570x428.jpg") center/cover;
+    height: 200px;
+    width: 100%;
+}
+
+.container{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 25px rgba(0,0,0, 0.5);
+}
+
+footer{
+    width: 100%;
+    color: white;
+}
+
+.footer-link{
+    text-decoration: none;
+}
+
+#footer_content{
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer_contacts h1{
+  margin-bottom: 0.75rem;  
+}
+
+#footer_social_media{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer_social_media .footer-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: white;
+    border-radius: 50%;
+}
+
+#footer_social_media .footer-link i{
+    font-size: 1.25rem;
+}
+
+#instagram{
+   background: white;
+}
+
+#facebook{
+    background: white; 
+}
+
+#youtube{
+    background: white; 
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer-list .footer-link{
+   color: #00ADEE; 
+}
+
+#footer-subscribe{
+   display: flex;
+   flex-direction: column;
+   gap: 1.5rem;
+}
+
+#footer_subscribe p{
+    color: #00ADEE;  
+}
+
+@media screen and (max-width: 768px){
+    #footer_content{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 426px){
+    #footer_content{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+}
